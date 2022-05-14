@@ -106,3 +106,6 @@ $(function() {
 
 });
 ```
+
+### Video
+https://youtu.be/wiNtEos8tVU
