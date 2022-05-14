@@ -10,7 +10,29 @@ A jQuery plugin that will create a booklet-like component that let's you navigat
 
 License: http://tympanus.net/codrops/licensing/
 
-### BookBlock Configuration Options
+
+## USAGE
+
+#### HTML side
+```
+<div id="bb-bookblock" class="bb-bookblock">
+	<div class="bb-item">
+		<!-- custom content -->
+	</div>
+	<div class="bb-item">
+		<!-- ... -->
+	</div>
+	<div class="bb-item">
+		<!-- ... -->
+	</div>
+	<div class="bb-item">
+		<!-- ... -->
+	</div>
+	<!-- ... -->
+</div>
+```
+
+#### BookBlock Configuration Options
 
 ```js
 // page to start on
@@ -37,6 +59,10 @@ circular : false,
 nextEl : '',
 // if we want to specify a selector that triggers the prev() function
 prevEl : '',
+// if we want to specify a selector to go to first
+firstEl: "",
+// if we want to specify a selector to go to last
+lastEl: "",
 // autoplay. If true it overwrites the circular option to true
 autoplay : false,
 // time (ms) between page switch, if autoplay is true
@@ -49,4 +75,27 @@ onEndFlip : function(old, page, isLimit) { return false; },
 // callback before the flip transition
 // page is the current item´s index
 onBeforeFlip : function(page) { return false; }
+```
+
+#### Vanilla usage
+```
+const selector = document.querySelector("#bb-bookblock");
+const bblock = new BookBlock(selector, {
+	speed: 800,
+	shadowSides: 0.8,
+	shadowFlip: 0.7,
+	nextEl: "#bb-nav-next",
+	prevEl: "#bb-nav-prev",
+	firstEl: "#bb-nav-first",
+	lastEl: "#bb-nav-last"
+});
+```
+
+#### jQuery usage
+```
+$(function() {
+			
+	$( '#bb-bookblock' ).bookblock();
+
+});
 ```
