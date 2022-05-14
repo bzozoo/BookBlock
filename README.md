@@ -32,9 +32,10 @@ License: http://tympanus.net/codrops/licensing/
 </div>
 
 <nav>
-	<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"></a>
-	<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right"></a>
-	<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"></a>
+	<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first"> </a>
+	<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"> </a>
+	<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right"> </a>
+	<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last"> </a>
 </nav>
 ```
 
