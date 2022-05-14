@@ -30,6 +30,12 @@ License: http://tympanus.net/codrops/licensing/
 	</div>
 	<!-- ... -->
 </div>
+
+<nav>
+	<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"></a>
+	<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right"></a>
+	<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"></a>
+</nav>
 ```
 
 #### BookBlock Configuration Options
@@ -60,9 +66,9 @@ nextEl : '',
 // if we want to specify a selector that triggers the prev() function
 prevEl : '',
 // if we want to specify a selector to go to first
-firstEl: "",
+firstEl: '',
 // if we want to specify a selector to go to last
-lastEl: "",
+lastEl: '',
 // autoplay. If true it overwrites the circular option to true
 autoplay : false,
 // time (ms) between page switch, if autoplay is true
@@ -77,7 +83,7 @@ onEndFlip : function(old, page, isLimit) { return false; },
 onBeforeFlip : function(page) { return false; }
 ```
 
-#### Vanilla usage
+#### Vanilla usage example
 ```
 const selector = document.querySelector("#bb-bookblock");
 const bblock = new BookBlock(selector, {
@@ -91,7 +97,7 @@ const bblock = new BookBlock(selector, {
 });
 ```
 
-#### jQuery usage
+#### jQuery usage example
 ```
 $(function() {
 			
